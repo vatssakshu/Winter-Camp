@@ -1,0 +1,23 @@
+class binSearch {
+    public static void main(String args[]) {
+
+        int arr[] = { 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5 };
+        int s = 0;
+        int e = arr.length;
+        int mid = s + e / 2;
+        int n = 4;
+        int count = 0;
+        while (s != e) {
+            if (arr[mid] > n) {
+                e = mid;
+                mid = s + e / 2;
+            } else if (arr[mid] < n) {
+                s = mid;
+                mid = s + e / 2;
+            } else {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
