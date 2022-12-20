@@ -1,0 +1,62 @@
+import java.util.*;
+
+class Stlength {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the String: ");
+        String st = in.next();
+        st = st + " ";
+        char ch = st.charAt(0);
+        int i = 0;
+        while (ch != ' ') {
+            ch = st.charAt(i);
+            i++;
+        }
+        i = i - 1;
+        System.out.println("The length of String is: " + i);
+    }
+}
+
+import java.util.*;
+
+class Stcopy {
+    public static void main(String args[]) {
+        String st = "Saksham";
+        int i = 7;
+        char ch;
+        String str = "";
+        for (int n = 0; n < i; n++) {
+            ch = st.charAt(n);
+            str = str + ch;
+        }
+        System.out.println(str);
+    }
+}
+
+class Strev {
+    public static void main(String args[]) {
+        String st = "Saksham";
+        int i = 7;
+        char ch;
+        String str = "";
+        for (int n = 0; n < i; n++) {
+            ch = st.charAt(n);
+            str = ch + str;
+        }
+        System.out.println(str);
+    }
+}
+
+class Stcon {
+    public static void main(String args[]) {
+        String st = "Saksham";
+        int i = 7;
+        char ch;
+        String str = "";
+        for (int n = 3; n < i; n++) {
+            ch = st.charAt(n);
+            System.out.println(ch);
+        }
+
+    }
+}
