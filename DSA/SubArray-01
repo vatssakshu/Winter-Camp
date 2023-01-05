@@ -1,0 +1,29 @@
+class countSub {
+
+    static void countArr(int arr[], int len) {
+        int c0, c1, count;
+        c0 = c1 = count = 0;
+        for (int j = 0; j < len; j++) {
+            if (arr[j] == 0) {
+                c0++;
+            } else if (arr[j] == 1) {
+                c1++;
+            }
+        }
+        if (c0 < c1) {
+            count = c0;
+        } else if (c0 > c1) {
+            count = c1;
+        } else {
+            count = c0;
+        }
+        System.out.println("Number of Sub Arrays: " + count);
+    }
+
+    public static void main(String args[]) {
+        int arr[] = { 0, 0, 0, 1, 1, 1, 1, 0, 0 };
+        int len = arr.length;
+        countArr(arr, len);
+    }
+
+}
